@@ -1,0 +1,24 @@
+﻿<h1> Все контакты</h1>
+<h3> @Model.CurrCategory </h3>
+
+<div class=" row mt-5 mb-2">
+   
+    <table border="1">
+    @{
+            foreach (var phoneBooks in Model.AllPhoneBooks)
+            {
+            <tr>
+                <td><strong> @phoneBooks.Id </strong></td>
+                <td><strong> @phoneBooks.FirstName </strong></td>
+                <td><strong> @phoneBooks.LastName </strong></td>
+                <td><strong> @phoneBooks.MiddleName</strong></td>
+                <td><strong> @phoneBooks.TelephonNumber </strong></td>
+                <td><strong> @phoneBooks.Email </strong></td>
+                <td> <img class="img-thumbnail" src="@phoneBooks.Submit" alt="@phoneBooks.FirstName" /></td>
+            </tr>
+            }
+
+    }
+
+     </table>
+</div>

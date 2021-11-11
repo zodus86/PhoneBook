@@ -1,0 +1,20 @@
+﻿<h1> Все контакты</h1>
+<h3> @Model.CurrCategory </h3>
+
+<div class=" row mt-5 mb-2">
+    @{
+        foreach (var phoneBooks in Model.AllPhoneBooks)
+        {
+            <div class="col-lg-4">
+                <p> Имя: @phoneBooks.Id</p>
+                <p> Имя: @phoneBooks.FirstName</p>
+                <p> Фамилия: @phoneBooks.LastName</p>
+                <p> Отчество: @phoneBooks.MiddleName</p>
+
+                <p><a class="btn-warning" href="AllInfa"> Подробнее </a> </p>
+            </div>
+        }
+
+    }
+
+</div>
