@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PhoneBook.Data;
 
 namespace PhoneBook.Controllers
 {
@@ -27,6 +28,12 @@ namespace PhoneBook.Controllers
             return View(obj);
         }
 
+        public IActionResult GetContactInfo (int id)
+        {
+
+            PhoneBooks model = _allPhoneBooks.GetPhoneBooks(id);
+            return View(model);
+        }
         public IActionResult AllInfa()
         {
             PhoneBooksListViewModel obj = new PhoneBooksListViewModel();

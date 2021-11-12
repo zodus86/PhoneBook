@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace PhoneBook.ViewModels
@@ -12,5 +13,6 @@ namespace PhoneBook.ViewModels
         
         public string CurrCategory { get; set; }
 
+       
     }
 }
